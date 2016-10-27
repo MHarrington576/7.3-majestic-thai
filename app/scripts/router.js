@@ -5,7 +5,8 @@ var ReactDOM = require('react-dom');
 var AppRouter = Backbone.Router.extend({
   routes: {
     '': 'index',
-    'menu/': 'menu'
+    'menu/': 'menu',
+    'staff/': 'staff'
   }
 
   index: function(){
@@ -20,7 +21,14 @@ var AppRouter = Backbone.Router.extend({
       React.createElement({router: this}),
       document.getElementById('app');
     });
-  }
+  },
+
+  staff: function(){
+    ReactDOM.render(
+      React.createElement({router: this}),
+      document.getElementById('app');
+    );
+  },
 });
 
 var router = new AppRouter();
