@@ -1,6 +1,6 @@
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
-@import 'https://fonts.googleapis.com/css?family=Oxygen|Satisfy';
+@import 'https://fonts.googleapis.com/css?family=Oxygen|Kaushan+Script';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ img {
 }
 
 body {
-  background: url('../images/majestic-thai-background.jpg') no-repeat center center fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/majestic-thai-background.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -31,5 +31,5 @@ a:hover {
 }
 
 h1 {
-  font-family: 'Satisfy', cursive;
+  font-family: 'Kaushan Script', cursive;
 }
