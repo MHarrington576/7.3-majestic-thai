@@ -10,8 +10,24 @@ img {
   max-width: 100%;
 }
 
+body {
+  background: url('../images/majestic-thai-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 #app {
   font-family: 'Oxygen', sans-serif;
+  height: 100%;
+  color: #FFFFFF;
 }
 
 h1 {
