@@ -19,4 +19,4 @@ var MenuCollection = Backbone.Collection.extend({
 module.exports = {
   MenuItem: MenuItem,
   MenuCollection: MenuCollection
-}
+};

@@ -2,6 +2,8 @@ var Backbone = require('backbone');
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+var AboutComponent = require('./components/about.jsx').AboutComponent;
+
 var AppRouter = Backbone.Router.extend({
   routes: {
     '': 'home',
@@ -11,41 +13,42 @@ var AppRouter = Backbone.Router.extend({
     'kitchen/': 'kitchen'
   },
 
-  home: function(){
-    ReactDOM.render(
-      React.createElement({router: this}),
-      document.getElementById('app')
-    );
-  },
-
-  menu: function(){
-    ReactDOM.render({
-      React.createElement({router: this}),
-      document.getElementById('app')
-    );
-  },
-
-  order: function(){
-    ReactDOM.render(
-      React.createElement({router: this}),
-      document.getElementById('app')
-    );
-  },
+  // home: function(){
+  //   ReactDOM.render(
+  //     React.createElement({router: this}),
+  //     document.getElementById('app')
+  //   );
+  // },
+  //
+  // menu: function(){
+  //   ReactDOM.render({
+  //     React.createElement({router: this}),
+  //     document.getElementById('app')
+  //   );
+  // },
+  //
+  // order: function(){
+  //   ReactDOM.render(
+  //     React.createElement({router: this}),
+  //     document.getElementById('app')
+  //   );
+  // },
 
   about: function(){
     ReactDOM.render(
-      React.createElement({router: this}),
-      document.getElementById('app')
-    );
-  },
-
-  kitchen: function(){
-// Authenticate with password?
-    ReactDOM.render(
-      React.createElement({router: this}),
+      React.createElement(AboutComponent, {router: this}),
       document.getElementById('app')
     );
   }
+  // ,
+
+//   kitchen: function(){
+// // Authenticate with password?
+//     ReactDOM.render(
+//       React.createElement({router: this}),
+//       document.getElementById('app')
+//     );
+//   }
 });
 
 var router = new AppRouter();

@@ -11,7 +11,7 @@ img {
 }
 
 body {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/majestic-thai-background.jpg') no-repeat center center fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../images/majestic-thai-background.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -22,6 +22,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: #CB3E04;
 }
 
 #app {
@@ -32,4 +33,8 @@ a:hover {
 
 h1 {
   font-family: 'Kaushan Script', cursive;
+}
+
+.about-us-box {
+  background-color: rgba(0, 0, 0, 0.65);
 }
