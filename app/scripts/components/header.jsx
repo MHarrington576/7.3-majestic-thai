@@ -4,7 +4,7 @@ var React = require('react');
 var HeaderComponent = React.createClass({
   render: function(){
     return (
-      <div className="inner-container">
+      <div className="header-container">
         <header className="row">
           <a className="col-md-1 col-xs-4" href="#order/">Your Order</a>
           <div className="col-md-3 col-md-offset-2 col-xs-12">

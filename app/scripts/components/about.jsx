@@ -6,7 +6,7 @@ var HeaderComponent = require('./header.jsx').HeaderComponent;
 var AboutComponent = React.createClass({
   render: function(){
     return (
-      <div>
+      <div classNamer="about-container">
         <HeaderComponent />
         <div className="about-us-box col-md-10 col-md-offset-1 col-xs-12">
           <h2>Our Story</h2>
