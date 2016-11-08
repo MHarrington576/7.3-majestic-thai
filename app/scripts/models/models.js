@@ -1,22 +1,22 @@
 var Backbone = require('backbone');
 var React = require('react');
 
-var MenuItem = Backbone.Model.extend({
+var Dish = Backbone.Model.extend({
   defaults: {
     thaiName: '',
     englishName: '',
     description: '',
-    imageUrl: '',
-    price: 0
+    price: 0,
+    imageUrl: ''
   }
 });
 
-var MenuCollection = Backbone.Collection.extend({
-  model: MenuItem,
+var DishCollection = Backbone.Collection.extend({
+  model: DishItem,
   url: '...'
 });
 
 module.exports = {
-  MenuItem: MenuItem,
-  MenuCollection: MenuCollection
+  Dish: Dish,
+  DishCollection: DishCollection
 };

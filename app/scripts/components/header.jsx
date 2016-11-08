@@ -6,6 +6,7 @@ var HeaderComponent = React.createClass({
     return (
       <div className="header-container">
         <header className="row">
+          <h1 className="col-md-2 col-xs-4">Majestic Thai</h1>
           <a className="col-md-1 col-xs-4" href="#order/">Your Order</a>
           <div className="col-md-3 col-md-offset-2 col-xs-12">
             <a href="#">Home</a>
@@ -17,7 +18,7 @@ var HeaderComponent = React.createClass({
 
         {this.props.children}
 
-    </div>
+      </div>
     );
   }
 });
