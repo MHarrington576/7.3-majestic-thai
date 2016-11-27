@@ -2,6 +2,7 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 @import 'https://fonts.googleapis.com/css?family=Oxygen|Kaushan+Script';
 
+// General //
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -35,6 +36,16 @@ h1 {
   font-family: 'Kaushan Script', cursive;
 }
 
+// Navbar //
+#navbar-logo {
+  display: inline-block;
+}
+
+.navbar-link {
+  padding-left: 10px;
+}
+
+// About //
 .about-us-box {
   background-color: rgba(0, 0, 0, 0.65);
 }

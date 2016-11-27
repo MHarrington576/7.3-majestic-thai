@@ -1,5 +1,4 @@
 var Backbone = require('backbone');
-var React = require('react');
 
 var Dish = Backbone.Model.extend({
   defaults: {
@@ -12,7 +11,7 @@ var Dish = Backbone.Model.extend({
 });
 
 var DishCollection = Backbone.Collection.extend({
-  model: DishItem,
+  model: Dish,
   url: '...'
 });
 

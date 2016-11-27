@@ -1,17 +1,16 @@
-var Backbone = require('backbone');
 var React = require('react');
 
-var HeaderComponent = require('./header.jsx').HeaderComponent;
+var NavbarContainer = require('./templates/navbar.jsx').NavbarContainer;
 
-var AboutComponent = React.createClass({
+var AboutContainer = React.createClass({
   render: function(){
     return (
-      <div classNamer="about-container">
-        <HeaderComponent />
+      <div className="container-fluid">
+        <NavbarContainer />
         <div className="about-us-box col-md-10 col-md-offset-1 col-xs-12">
           <h2>Our Story</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dom eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div>
       </div>
     );
@@ -19,5 +18,5 @@ var AboutComponent = React.createClass({
 });
 
 module.exports = {
-  AboutComponent: AboutComponent
+  AboutContainer: AboutContainer
 };
