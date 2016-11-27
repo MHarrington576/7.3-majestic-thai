@@ -5766,8 +5766,8 @@ img {
   max-width: 100%; }
 
 body {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/majestic-thai-background.jpg") no-repeat center center fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/majestic-thai-background.jpg") no-repeat center center fixed;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/majestic-thai-background.jpg") no-repeat center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/majestic-thai-background.jpg") no-repeat center fixed;
   background-size: cover; }
 
 a {
@@ -5785,6 +5785,12 @@ a:hover {
 
 h1 {
   font-family: 'Kaushan Script', cursive; }
+
+#navbar-logo {
+  display: inline-block; }
+
+.navbar-link {
+  padding-left: 10px; }
 
 .about-us-box {
   background-color: rgba(0, 0, 0, 0.65); }
